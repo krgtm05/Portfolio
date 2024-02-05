@@ -1,0 +1,965 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;   
+}
+
+body {
+    /* background-color: rgb(250, 239, 255); */
+    background-color: rgb(251, 244, 255);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251, 244, 255);
+    box-shadow: 0 0 5px rgb(144, 144, 144);
+}
+
+
+nav {
+    height: 8vh;
+    z-index: 999;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: green; */
+}
+
+main {
+    max-width: 1200px;
+}
+
+.main-logo h3 {
+    font-size: 2.5rem;
+}
+
+.dot {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(93, 0, 127);
+}
+
+.blueviolet {
+    color:rgb(93, 0, 127);
+
+}
+
+.color-wrap {
+    color: white;
+    background-color: rgb(93, 0, 127);
+    padding: 0 4px;
+}
+
+.nav-links {
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+/* mobile */
+.hamburger{
+    display: none;
+}
+
+.hireme{
+    color: white;
+    border-radius: 4px;
+    padding: 0.5vmin 3vmin;
+    background-color: rgb(252, 44, 44);
+    box-shadow: 0 0 5px  rgb(149, 149, 149);
+    cursor: pointer;
+    user-select: none;
+}
+.hireme p{
+    color: white;
+}
+
+
+section {
+    height: 100vh;
+    user-select: none;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.summary-details {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* background-color: #fff; */
+}
+
+.summary-details p{
+    font-size: 1.4rem;
+}
+.summary-details h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4000px;
+    height: 50vmin;
+    margin-top: 10vmin;
+    /* background-color: green; */
+}
+
+.img img {
+    height: 30vh;
+    width: 30vh;
+    border-radius: 500px;
+    border: 2px solid rgb(93, 0, 127);
+    filter: brightness(115%);
+
+}
+.first {
+    padding: 12px;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fir infinite ease-in-out 4s;
+    transition: padding 4s ease;
+   
+}
+
+ @keyframes fir {
+        from {
+            padding: 12px;
+            border: 1px solid rgb(250, 239, 255);
+        }
+
+        to {
+            padding: 16px;
+            border: 2px solid rgb(93, 0, 127);
+        }
+}
+
+.second {
+        padding: 10px;
+        border-radius: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: sec infinite ease-in-out 4s;
+        transition: padding 4s ease;
+}
+
+ @keyframes sec {
+        from {
+            border: 1px solid rgb(93, 0, 127);
+            padding: 10px;
+        }
+
+        to {
+            padding: 14px;
+            border: 2px solid rgb(250, 239, 255);
+        }
+}
+.summary-button {
+    height: 10vh;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+  }
+ .summary-button button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .general-btn {
+    background-color: rgb(93, 0, 127);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid rgb(93, 0, 127);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+  }
+  
+  .stroke-btn {
+    height: fit-content;
+    background-color: white;
+    color: rgb(93, 0, 127);
+    border: 2px solid rgb(93, 0, 127);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .sechead{
+    font-size: 1.5rem;
+    height:8vh ;
+  }
+  .second-section{
+    height:30vh;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
+  .images{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 15px 0;
+  }
+  .img-div{
+    display: flex;
+    width: 45%;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  .img-div img{
+    width: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .img-div i{
+    padding: 12px 20px;
+    color:tomato;
+  }
+
+.project-section{
+    height: fit-content;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.7vmin;
+    gap: 1vmin;
+    height: 40vh;
+}
+
+.project-menu{
+    width: 35%;
+    box-sizing: border-box;
+    background-color: rgb(248, 241, 255);
+    overflow: scroll;
+    border-radius:  4px;
+    overflow-x: hidden;
+    direction: rtl;
+    padding: 1vmin;
+    border: 10px solid rgb(248, 241, 255);
+    border-top: 15px solid rgb(248, 241, 255);
+    border-bottom: 15px solid rgb(248, 241, 255);
+    box-shadow: 0 0 2px rgb(171, 171, 171);
+}
+.project-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1vmin;
+    text-align: left;
+}
+.project-menu ul p{
+    font-weight: 500;
+}
+.project-menu ul li{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0.8vmin;
+}
+.project-menu::-webkit-scrollbar {
+    width: 0.5vmin;
+}
+
+/* Style the track (the area where the thumb moves) */
+.project-menu::-webkit-scrollbar-track {
+    background-color: rgb(233, 210, 255);
+    border-radius: 1000px;
+
+}
+
+/* Style the thumb (the draggable part of the scrollbar) */
+.project-menu::-webkit-scrollbar-thumb {
+    background-color: rgb(92, 0, 179);
+    border-radius: 1000px;
+}
+
+/* Style the buttons (arrows) of the scrollbar */
+.project-menu::-webkit-scrollbar-button {
+    background-color: rgb(233, 210, 255);
+    height: 0;
+}
+.project{
+    width: 100%;
+    /* border: 1px solid green; */
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(248, 241, 255);
+    box-shadow: 0 0 2px rgb(171, 171, 171);
+   
+}
+
+.project-div{
+    width: 65%;
+    height: 65%;
+    border: 1.5px solid rgb(93, 0, 127);
+    display: flex;
+    border-radius: 6px;
+    flex-direction:column ;
+    box-sizing: border-box;
+    padding: 18px;
+    justify-content: space-between;
+    background-color: #fff;
+
+}
+.project-div-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.project-div-header a{
+    text-decoration: none;
+}
+.project-foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pjt-about{
+    text-align: justify;
+}
+.pjt-btn,.pjt-techs{
+    font-size: 0.9rem;
+    padding: 0.6vh 1.2vh;
+    font-weight: 500;
+    border: none;
+    background-color: rgb(93, 0, 127);
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgb(111, 111, 111);
+
+}
+.project-techstack-btn{
+    display: flex;
+    gap: 8px;
+}
+.pjt-name{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.pjt-techs{
+    background-color: #fdf6ff;
+    color: rgb(0, 0, 0);
+    font-weight: medium;
+    border: 1px solid rgb(93, 0, 127);
+}
+.pjt-btn i{
+    font-size: 0.9rem;
+    color: white;
+    /* padding-left: 0.8vmin; */
+}
+
+.type-one-img i,.type-two-img img{
+    border-left: 2px solid black;
+}
+.type-two-img i,.type-one-img img{
+    border-right: 2px solid black;
+}
+.qoute p{
+    font-size: 1.2rem;
+}
+.third-section{
+    height: fit-content;
+    margin-bottom: 5vh;
+    padding:0 1.7vmin;
+    /* background-color: rgb(253, 249, 255);
+    border-radius: 4px;
+    border: 1px solid rgb(93, 0, 127); */
+   
+}
+.internship{
+    display: flex;
+    flex-direction: column;
+    gap: 2vmin;
+}
+
+.intership-details h3{
+    color:rgb(93, 0, 127);
+    
+}
+.intership-details h3 a{
+    float: right;
+    
+}
+.intership-details ul{
+    color: rgb(93, 0, 127);
+    padding-left: 2vmin;
+    list-style-type: circle;
+}
+.duration p{
+    color: #a2a2a2;
+}
+.intership-details p{
+    color: black;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.fourth-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 20vh;
+    height: fit-content;
+    margin-bottom: 5vh;
+}
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.skill-btn{
+    padding: 1.2vh 3.6vh;
+    border-radius: 4px;
+    border: none;
+    box-shadow: inset 0 0 5px rgb(251, 251, 251);
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    background-color:rgb(93, 0, 127);
+    color: white;
+    width:fit-content;
+}
+.skill-btn i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: rgb(93, 0, 127);
+    color: white;
+}
+.green{
+    color: rgb(17, 255, 0);
+}
+.five-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0 1.7vmin;
+    height: fit-content;
+    gap: 1.5vmin;
+    margin-bottom: 5vh;
+    /* background-color: red; */
+
+}
+.five-section h3{
+    color: grey;
+}
+.edu{
+    display: flex;
+    justify-content: space-between;
+    border-radius:4px;
+    padding: 2vmin;
+    box-shadow: 0 0 5px rgb(186, 185, 185);
+    color: rgb(93, 0, 127);
+    border: 1px solid rgb(93, 0, 127);
+    background-color: rgb(253, 249, 255);
+
+}
+.edu-2{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5vmin;
+}
+.school{
+    min-height: 14vmin;
+    width: 100%;
+    border-radius:4px;
+    padding: 2vmin;
+    box-shadow: 0 0 5px rgb(186, 185, 185);
+    color: rgb(93, 0, 127);
+    border: 1px solid rgb(93, 0, 127);
+    background-color: rgb(253, 249, 255);
+
+}
+
+.six-section{
+    text-align: justify;
+    overflow: scroll;
+    overflow-x: hidden;
+    direction: rtl;
+    height:30vh;
+    margin-bottom: 5vh;
+    padding:0.8vh 0.8vh 0.8vh 1.2vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    /* justify-content: space-between; */
+}
+
+.six-section::-webkit-scrollbar {
+    width: 0.8vmin;
+}
+
+/* Style the track (the area where the thumb moves) */
+.six-section::-webkit-scrollbar-track {
+    background-color: rgb(233, 210, 255);
+    border-radius: 1000px;
+
+}
+
+/* Style the thumb (the draggable part of the scrollbar) */
+.six-section::-webkit-scrollbar-thumb {
+    background-color: rgb(92, 0, 179);
+    border-radius: 1000px;
+}
+
+/* Style the buttons (arrows) of the scrollbar */
+.six-section::-webkit-scrollbar-button {
+    background-color: rgb(233, 210, 255);
+    height: 0;
+}
+.cert{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid  rgb(93, 0, 127);;
+    padding: 1vh 2vh;
+    color: rgb(93, 0, 127);
+    border-radius: 6px;
+    background-color: rgb(253, 249, 255);
+   
+}
+.cert i{
+    color: rgb(93, 0, 127);
+}
+.seven-section{
+height: fit-content;
+margin-bottom: 5vh;
+padding: 1.7vmin;
+}
+.seven-section p{
+    font-size: 1.3rem;
+}
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+
+}
+.info div{
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#form span{
+    color: red;
+}
+
+input {
+    
+    min-width: 96%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(93, 0, 127);;
+    background-color: rgb(253, 249, 255);
+    margin-top: 10px;
+    font-size: 1.2rem;
+    outline: none;
+    color: rgb(93, 0, 127);
+  }
+
+  input label{
+    font-size: 2rem;
+  }
+
+  input:hover {
+    border: 1px solid blueviolet;
+
+  }
+
+  textarea {
+    min-width: 96%;
+    border: 1px solid rgb(93, 0, 127);;
+    border-radius: 4px;
+    margin-top: 10px;
+    background-color: rgb(253, 249, 255);
+    padding: 10px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    outline:none;
+    color: rgb(93, 0, 127);
+
+  }
+
+  textarea:hover {
+    border: 1px solid blueviolet;
+
+  }
+
+  ::placeholder{
+    color: rgb(177, 140, 190);
+  }
+
+  .submit {
+    width: 100px;
+    padding: 15px 0;
+    margin-top: 15px;
+    font-size: 1rem;
+    background-color: rgb(93, 0, 127);
+    border: none;
+    border-radius: 4px;
+    color: rgb(232, 231, 231);
+    font-weight: 500;
+  }
+.label{
+    color: rgb(93, 0, 127);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.eight-section{
+    height: fit-content;
+    margin-bottom: 5vh;
+    padding: 1.7vmin;
+}
+.eight-section p{
+    font-size: 1.2rem;
+}
+.media-icon a{
+    text-decoration: none;
+}
+.media-icon i {
+    font-size: 2rem;
+    color: rgb(93, 0, 127);
+    margin-right: 2rem;
+}
+
+body::-webkit-scrollbar {
+    width: 1vmin;
+}
+
+/* Style the track (the area where the thumb moves) */
+body::-webkit-scrollbar-track {
+    background-color: rgb(233, 210, 255);
+
+}
+
+/* Style the thumb (the draggable part of the scrollbar) */
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(92, 0, 179);
+    border-radius: 1000px;
+}
+
+/* Style the buttons (arrows) of the scrollbar */
+body::-webkit-scrollbar-button {
+    background-color: rgb(233, 210, 255);
+    height: 0;
+}
+
+footer{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 1.5vmin 0;
+    color: white;
+    background-color: rgb(93, 0, 127);    
+    /* font-size:larger ; */
+}
+footer span{
+    font-weight: 500;
+}
+.top{
+    position: fixed;
+    bottom: 60px;
+    background-color: rgb(251, 244, 255);
+    border: none;
+    width: fit-content;
+    display: none;
+    justify-content: right;
+    align-items: center;
+    transition:  ease-in-out 5s;
+    border-radius: 100px;
+    right: 20px;
+}
+.top i{
+    font-size: 30px;
+    background-color:rgb(93, 0, 127);
+    border-radius: 100px;
+    padding: 10px;
+    color: white;
+    z-index: 999;
+    visibility:visible;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .active{
+    background-color: rgb(93, 0, 127);
+    color: white;
+  }
+
+  
+.animation{
+    animation: anim 0.2s ease-in-out infinite ;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+@keyframes anim {
+    from {
+        box-shadow: 0 0 2px rgb(255, 255, 255);
+    }
+
+    to {
+        box-shadow: 0 0 20px rgb(225, 164, 255);
+    }
+}
+
+#animatedText {
+    overflow: hidden;
+    /* white-space: wrap; */
+    border-right: 1px solid black; /* Add a blinking cursor effect */
+    padding-right: 3px; /* Adjust spacing for cursor effect */
+  }
+  .hackathon{
+    text-align: justify;
+    margin-bottom: 5vmin;
+  }
+  .hackathon i{
+    color: rgb(93, 0, 127);
+  }
+  .fa-medal{
+    font-size: 5rem;
+  }
+  .hackathon h2{
+    text-align: center;
+  }
+  .hack-div{
+    border: 2px solid rgb(93, 0, 127);
+    display: flex;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 20px;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .hack-cert img{
+    width: 150px;
+    
+  }
+  .hack-cert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hack-cert p{
+    font-weight: 500;
+    color: rgb(93, 0, 127);
+  }
+  .hack-about{
+    border-left: 1px solid rgb(93, 0, 127);
+    border-right: 1px solid rgb(93, 0, 127);
+    padding: 0 1.5rem;
+  }
+.hack-about-mobile{
+    display: none;
+}
+  :root {
+    --primary-color: rgb(93, 0, 127);
+  }
+  
+  @media screen and (max-width:425px){
+    body{
+        width: fit-content;
+    }
+    main{
+        padding: 0 0.5rem;
+    }
+    nav{
+        padding:5px 15px ;
+    }
+    .link{
+        display: none;
+    }
+    .nav-links {
+        height: fit-content;
+        width: fit-content;
+        gap: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .hamburger {
+        display: block;
+        font-size: 200%;
+        color: var(--primary-color);
+    }
+    section{
+        height: fit-content;
+        padding: 1.5rem 0;
+    }
+    .first-section{
+        margin-top: 4rem;
+        height: 90vh;
+        padding-bottom: 0;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        flex-wrap: nowrap;
+      }
+    .img-div{
+        width: 60%;    
+        border-radius: 5px;
+        overflow: hidden;
+        border-color: rgb(36, 0, 45);
+    }
+    .img-div i{
+        padding: 12px 11px;
+      }
+      .qoute{
+        padding:2vh 0;
+      }
+    .project-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-menu{
+        width: 500px;
+        overflow-y: hidden;
+    }
+    .project-menu ul{
+        overflow-x: scroll;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 1vh;
+        white-space: nowrap;
+    }
+    .project-menu ul li{
+        white-space: nowrap;
+        padding: 0.5vh 1vh;
+        height: fit-content;
+    }
+    .project{
+        width: 100%;
+    }
+    .project-div{
+        width: 100%;
+        min-height: 30vh;
+        height: fit-content;
+    }
+    .internship{
+        gap: 2rem;
+    }
+    .intership-details{
+        padding:0 1rem;
+    }
+    .fourth-section{
+        padding: 0;
+    }
+    .skill{
+        width: 95%;
+        justify-content: space-evenly;
+    }
+    .skill-btn{
+        width: 48%;
+        padding: 0.8rem 0;
+        font-size: 1.2rem;
+    }
+    .school{
+        height: 20vh;
+    }
+    .info{
+        flex-direction: column;
+       gap: 1rem;
+    }
+    .hack-about-mobile{
+        display: block;
+        text-align: justify;
+        
+    }
+    .hack-div{
+        min-width:450px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hack-about{
+        display: none;
+    }
+    .hack-cert{
+        display: none;
+    }
+    .fa-medal{
+        font-size: 3rem;
+    }
+    .summary-details {
+        margin-top: 5vh;
+    }
+    
+  }
