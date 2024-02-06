@@ -518,7 +518,7 @@ section {
     gap: 1.5vmin;
 }
 .school{
-    min-height: fit-content;
+    min-height: 15vh;
     width: 100%;
     border-radius:4px;
     padding: 2vmin;
@@ -840,6 +840,7 @@ footer span{
         padding: 0 0.5rem;
     }
     nav{
+        height: 6vh;
         padding:5px 15px ;
     }
     .link{
