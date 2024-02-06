@@ -889,10 +889,7 @@ footer span{
       .qoute{
         padding:2vh 0;
       }
-      .pjt-btn{
-        padding: 1vh 1.5vh;
-        font-size: 1rem;
-      }
+      
     .project-section{
         display: flex;
         flex-direction: column;
