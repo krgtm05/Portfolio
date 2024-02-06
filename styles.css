@@ -832,7 +832,7 @@ footer span{
     --primary-color: rgb(93, 0, 127);
   }
   
-  @media screen and (max-width:800px){
+  @media screen and (max-width:768px){
     body{
         width: fit-content;
     }
