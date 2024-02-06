@@ -192,8 +192,7 @@ section {
         }
 }
 .summary-button {
-    height: 10vh;
-    /* background-color: pink; */
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-around; 
@@ -272,6 +271,9 @@ section {
     padding: 0 1.7vmin;
     gap: 1vmin;
     height: 40vh;
+}
+.project-status-complete{
+    color: green;
 }
 
 .project-menu{
@@ -865,7 +867,7 @@ footer span{
     }
     .first-section{
         margin-top: 4rem;
-        height: 90vh;
+        height: 80vh;
         padding-bottom: 0;
     }
     .images{
@@ -886,6 +888,10 @@ footer span{
       }
       .qoute{
         padding:2vh 0;
+      }
+      .pjt-btn{
+        padding: 1vh 1.5vh;
+        font-size: 1rem;
       }
     .project-section{
         display: flex;
@@ -934,7 +940,7 @@ footer span{
         font-size: 1.2rem;
     }
     .school{
-        height: 20vh;
+        height: fit-content;
     }
     .info{
         flex-direction: column;
