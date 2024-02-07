@@ -52,6 +52,7 @@ menuOptions.forEach((el,idx)=>{
     el.classList.add('active');
     document.querySelector(".pjt-name").innerText = item.name;
     document.querySelector(".project-div-header a").href = item.src;
+    document.querySelector(".project-div-header a").target = "_blank";
     document.querySelector(".pjt-about").innerText = item.about;
     const parentDiv = document.querySelector('.project-techstack-btn');
       while (parentDiv.firstChild) {

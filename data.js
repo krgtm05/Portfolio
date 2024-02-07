@@ -46,7 +46,7 @@ const projectCardArray = [
     },
     {
         name :'My Portfolio - Gautam Kumar',
-        src:'https://krgtm05.github.io/gautam.in/#home',
+        src:'https://krgtm05.github.io/Portfolio/',
         techStack : ['HTML','CSS','JavaScript'],
         about:'Crafted an engaging portfolio development website showcasing my skills and projects, leveraging HTML, CSS, and JavaScript for a seamless and interactive user experience.',
         codeSrc:'https://github.com/krgtm05/Portfolios',
