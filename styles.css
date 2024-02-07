@@ -831,6 +831,39 @@ footer span{
 .hack-about-mobile{
     display: none;
 }
+.hamburger-datails{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    background-color: #fdf9ff;
+    box-shadow: 0 0 2px rgb(124, 124, 124);
+    width: 70%;
+    padding: 3vh;
+    animation: pop 1s ease-in-out;
+}
+@keyframes pop {
+    from {
+        right:-100%;  
+    }
+    to{
+        right: 0;
+    }
+}
+.hamb-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamb-link i{
+    margin: 10px;
+}
+.hamb-link p{
+    margin: 1.5vh 0;
+    font-size: 1.4rem;
+    color: rgb(93, 0, 127);
+}
   :root {
     --primary-color: rgb(93, 0, 127);
   }
@@ -841,6 +874,9 @@ footer span{
     }
     main{
         padding: 0 0.5rem;
+    }
+    header{
+        position: fixed;
     }
     .sechead{
         height:fit-content ;

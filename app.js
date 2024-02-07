@@ -1,8 +1,12 @@
 const scrolltopbtn = document.querySelector(".top");
 const formId = document.querySelector("#form");
-
-
+const hamburger = document.querySelector(".hamburger");
+const cross = document.querySelector(".fa-x");
 //text effect
+document.addEventListener('DOMContentLoaded', function() {
+  // Your code to run after the DOM has loaded
+  preventDefault();
+});
 document.addEventListener('DOMContentLoaded', function() {
   const originalText = "Gautam Kumar";
   let animatedTextElement = document.querySelector('#animatedText');
@@ -144,4 +148,16 @@ window.onscroll =() =>{
 scrolltopbtn.addEventListener("click",()=>{
       document.body.scrollTop = 0; //safari
       document.documentElement.scrollTop = 0;//chrome and other
+});
+//hamburger click
+hamburger.addEventListener("click",(event)=>{
+  event.preventDefault();
+  const hamDetails = document.querySelector(".hamburger-datails");
+  console.log("click");
+  hamDetails.style.display = "block";
+});
+cross.addEventListener("click",(event)=>{
+  event.preventDefault();
+  const crossD = document.querySelector(".hamburger-datails");
+  crossD.style.display = "none";
 });
