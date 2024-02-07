@@ -844,6 +844,10 @@ footer span{
     main{
         padding: 0 0.5rem;
     }
+    .sechead{
+        height:fit-content ;
+        margin-bottom: 1.2vh;
+      }
     nav{
         height: 6vh;
         padding:5px 15px ;
@@ -867,6 +871,7 @@ footer span{
     section{
         height: fit-content;
         padding: 1.5rem 0;
+        margin: 0;
     }
     .first-section{
         margin-top: 4rem;
@@ -874,11 +879,7 @@ footer span{
         padding-bottom: 0;
     }
     .images{
-        /* display: flex;
-        flex-direction: column;
-        align-items: center; */
         width: 90%;
-        /* flex-wrap: nowrap; */
       }
     .img-div{
         /* width: 60%;     */
@@ -964,5 +965,7 @@ footer span{
     .summary-details {
         margin-top: 5vh;
     }
-    
+    .project-section,.third-section,.fourth-section,.five-section,.six-section,.seven-section,.eight-section{
+        margin-bottom: 2vh;
+    }
   }
