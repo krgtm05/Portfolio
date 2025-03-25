@@ -1,5 +1,8 @@
 const certificateArray = [
-   
+   {
+    certificateName :'HackerRank Skill Certificate ( SQL )',
+    src:'https://www.hackerrank.com/certificates/2eb7cc5b6491'
+   },
    {
     certificateName :'JavaScript - Mastering the Fundamentals',
     src:'https://moonshot.scaler.com/s/sl/nIWfuBHpD8'
@@ -24,6 +27,7 @@ const certificateArray = [
 ];
 
 const projectMenuArray = [
+    'FilterPixel',
     'Real Time Currecny Converter',
     'My Portfolio',
     'The Weather App',
@@ -36,6 +40,14 @@ const projectMenuArray = [
 ];
 
 const projectCardArray = [
+    {
+        name :'FilterPixel',
+        src:'https://krgtm05.github.io/FilterPixel/login',
+        techStack : [' Angular', 'Firebase', 'Typescript', 'Angular Material', 'HTML', 'CSS'],
+        about: 'Advanced Image gallery built over Pixel API with dual authentication methods.',
+        codeSrc:'https://github.com/krgtm05/FilterPixel',
+        status: 1
+    },
     {
         name :'Real Time Currency Converter',
         src:'https://krgtm05.github.io/KurrencyKonverter/',
